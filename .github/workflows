@@ -1,0 +1,34 @@
+name: Generate files_info.json
+
+on:
+  push:
+    paths:
+      - 'files/**'  # Trigger only when files change in user_files directory
+    branches:
+      - main             # Replace with the branch where users push changes
+
+jobs:
+  generate_files_info:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run Python script
+        run: python script.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add build/user_files/files_info.json
+          git commit -m "Generate files_info.json"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
