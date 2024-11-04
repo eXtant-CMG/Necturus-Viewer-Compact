@@ -6,6 +6,7 @@ on:
       - 'files/**'  # Trigger only when files change in user_files directory
     branches:
       - main             # Replace with the branch where users push changes
+  workflow_dispatch:
 
 jobs:
   generate_files_info:
