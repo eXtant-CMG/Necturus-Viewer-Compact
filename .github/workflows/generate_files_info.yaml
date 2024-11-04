@@ -20,6 +20,9 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install dependencies
+        run: pip install natsort
+        
       - name: Run Python script
         run: python script.py
 
@@ -27,7 +30,7 @@ jobs:
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add build/user_files/files_info.json
+          git add files_info.json
           git commit -m "Generate files_info.json"
           git push
         env:

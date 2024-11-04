@@ -1,0 +1,22 @@
+name: Deploy to GitHub Pages
+
+on:
+  workflow_run:
+    workflows: ["Generate files_info.json"]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write  # Needed for GitHub Pages deployment
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
