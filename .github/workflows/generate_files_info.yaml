@@ -3,9 +3,9 @@ name: Generate files_info.json
 on:
   push:
     paths:
-      - 'files/**'  # Trigger only when files change in user_files directory
+      - 'files/**'  # Trigger only when files change in the files directory
     branches:
-      - main             # Replace with the branch where users push changes
+      - main  # Replace with the branch where users push changes
   workflow_dispatch:
 
 jobs:
@@ -23,11 +23,23 @@ jobs:
 
       - name: Install dependencies
         run: pip install natsort
-        
+
       - name: Run Python script
         run: python script.py
 
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet files_info.json; then
+            echo "No changes to commit"
+            echo "changed=false" >> $GITHUB_ENV
+          else
+            echo "Changes detected"
+            echo "changed=true" >> $GITHUB_ENV
+          fi
+
       - name: Commit and push changes
+        if: env.changed == 'true'
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
