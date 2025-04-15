@@ -1,0 +1,42 @@
+name: Generate Search Indexes
+
+on:
+  workflow_run:
+    workflows: ["Generate files_info.json"]
+    types:
+      - completed
+  workflow_dispatch:
+
+
+jobs:
+  generate-index:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # adjust if necessary
+
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          npm install
+
+      # Run the index generation script
+      - name: Generate search indexes
+        run: |
+          node generate-index.js
+
+      # Commit and push generated indexes
+      - name: Commit and push generated indexes
+        uses: EndBug/add-and-commit@v7
+        with:
+          author_name: 'GitHub Actions'
+          author_email: 'actions@github.com'
+          message: 'Generated search indexes'
+          add: 'files/*/index.json'  # Change this if needed to match the path of generated indexes
