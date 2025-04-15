@@ -30,7 +30,7 @@ jobs:
       # Run the index generation script
       - name: Generate search indexes
         run: |
-          node generate-index.js
+          node generate_fuse_index.js
 
       # Commit and push generated indexes
       - name: Commit and push generated indexes
