@@ -25,7 +25,7 @@ jobs:
       # Install dependencies
       - name: Install dependencies
         run: |
-          npm install
+          npm install fs path jsdom fuse.js
 
       # Run the index generation script
       - name: Generate search indexes
