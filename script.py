@@ -1,6 +1,7 @@
 import os
 import json
 import natsort
+from urllib.parse import quote
 
 # Path to the top-level directory containing the folders
 top_directory = './files'
@@ -39,7 +40,7 @@ def process_folders(directory):
 
             # Add to result
             result.append({
-                "path": folder,
+                "path": quote(folder),  # ✅ URL-encode the folder name
                 "name": collection_name,
                 "pages": xml_files
             })
