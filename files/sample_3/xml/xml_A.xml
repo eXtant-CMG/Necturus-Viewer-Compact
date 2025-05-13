@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MVN xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt><title>Jacob van Maerlant, Martijn</title><editor xml:id="SM">Sofie Moors</editor></titleStmt>
+            <publicationStmt>
+                <p>Transcription based on: Brinkman, H. and Schenkel, J. (eds.) (1997). Het Comburgse handschrift. Hs. Stuttgart,. Württembergische Landesbibliothek, Cod. poet. et phil. 2o 22. Band 1. Hilversum: Verloren.</p>
+            </publicationStmt>
+            <sourceDesc>
+<msDesc>
+          <msIdentifier>
+            <settlement>Stuttgart </settlement>
+            <institution>Württemberg State Library</institution>
+            <idno>Cod. Poet. Et phil. 2° 22</idno>
+            <msName>Comburg manuscript, A</msName>
+          </msIdentifier>
+<msContents>
+<msItem>
+<locus from="112rb" to="124va"/>
+<title>Martijn Trilogy</title>
+<author>Jacob van Maerlant</author>
+</msItem>
+</msContents>
+<physDesc>
+<objectDesc form="sammelband">
+                     <supportDesc material="perch">
+                        <support>
+                           <num type="front-flyleaf" value="0"/>
+                           <num type="book-block" value="44"/>
+                           <num type="end-flyleaf" value="0"/>
+                           <dimensions type="leaf">
+                              <height unit="mm" quantity="265"/>
+                              <width unit="mm" quantity="192"/>
+                           </dimensions>
+                        </support>
+                     <foliation>16th century foliation in black ink in Arabic numbers (87-130)</foliation>
+                     <collation>1-5IV(40);6II(44)</collation>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2" writtenLines="36" ruledLines="36">
+                           <dimensions type="written">
+                              <height unit="mm" quantity="218"/>
+                              <width unit="mm" quantity="146"/>
+                           </dimensions>
+                           <catchwords></catchwords>
+                           <signatures>only one remains (eiiij)(f.122r)</signatures>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc hands="1">
+                     <handNote script="littera textualis">the Martijn Trilogy is written in littera textualis by a single hand B</handNote>
+                  </handDesc>
+                  <decoDesc><decoNote> initial (red); lombardic capital letters as strophic separation (red), colour-stroking (red) first letters</decoNote></decoDesc>
+                  <additions><p>convolute of 6 manuscripts; 346 leafs/</p><p>[i+] 1-10IV(80);11III(86);12-16IV(126);17II(130);18-23IV(178);24-30IV(234);31-33IV(258);34IV-1(265);35-36IV(281);37IV-1(288);38-43IV(336);44V(347)</p></additions>
+               </physDesc>
+<history>
+<origin>
+<origDate>1400-1425</origDate>
+<origPlace>Flanders</origPlace>
+</origin></history>
+        </msDesc>
+               
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <xi:include href="http://www.huygensinstituut.knaw.nl/projecten/mvn/webfiles/charDecl.xml"  
+                xmlns:xi="http://www.w3.org/2001/XInclude">
+                <xi:fallback>
+                    <xi:include href="charDecl/charDecl.xml"/>
+                </xi:fallback>
+            </xi:include>
+            <editorialDecl>
+                <p><!-- Verantwoording van de editie --></p>
+
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <handNotes>
+                <handNote xml:id="h1"><p>...</p></handNote>
+            </handNotes>
+        </profileDesc>
+    </teiHeader>
+    <text xml:id="Martijn">
+        <group><pb xml:id="A.f112rb" n="112rb"/>
+
+
+<text n="Eerste Martijn" xml:id="M1">
+<body>
+<p><lg type="stanza" n="01">
+
+<note n="A_M1_01_000">Line_number 000 is missing</note>
+<lb n="1" xml:id="Af112rb.1"/><l n="A_M1_01_001"><hi rend="capitalsize4">V</hi>Vaphene <choice><abbr>m<g ref="#apomod"/>tin</abbr><expan>m<ex>ar</ex>tin</expan></choice> hoe salt gaen</l>
+<lb n="2" xml:id="Af112rb.2"/><l n="A_M1_01_002"><hi rend="capitalsize1">S</hi>al die <choice><abbr>w<g ref="#apomod"/>elt</abbr><expan>w<ex>eer</ex>elt</expan></choice> hiet <choice><abbr>la<g ref="#bar"/>ghe</abbr><expan>la<ex>n</ex>ghe</expan></choice> <choice><abbr>stae<g ref="#bar"/></abbr><expan>stae<ex>n</ex></expan></choice></l>
+<lb n="3" xml:id="Af112rb.3"/><l n="A_M1_01_003"><hi rend="capitalsize1">I</hi>n dus <choice><abbr>crancke<g ref="#bar"/></abbr><expan>crancke<ex>n</ex></expan></choice> loue</l>
+<lb n="4" xml:id="Af112rb.4"/><l n="A_M1_01_004"><hi rend="capitalsize1">S</hi>o moet <choice><abbr>v<hi rend="superscript">o</hi>uwe</abbr><expan>v<ex>ro</ex>uwe</expan></choice> <choice><abbr>v<g ref="#apomod"/>eere</abbr><expan>v<ex>er</ex>eere</expan></choice> saen</l>
+<lb n="5" xml:id="Af112rb.5"/><l n="A_M1_01_005"><choice><abbr>Sond<g ref="#apomod"/></abbr><expan>Sond<ex>er</ex></expan></choice> twifel ende waen</l>
+<lb n="6" xml:id="Af112rb.6"/><l n="A_M1_01_006"><hi rend="capitalsize1">R</hi>umen <choice><abbr>he<g ref="#apomod"/>en</abbr><expan>he<ex>er</ex>en</expan></choice> houe</l>
+<lb n="7" xml:id="Af112rb.7"/><l n="A_M1_01_007"><hi rend="capitalsize1">I</hi>c zie <choice><abbr>de<g ref="#bar"/></abbr><expan>de<ex>n</ex></expan></choice> <choice><abbr>valsche<g ref="#bar"/></abbr><expan>valsche<ex>n</ex></expan></choice> wel ontfaen</l>
+<lb n="8" xml:id="Af112rb.8"/><l n="A_M1_01_008"><hi rend="capitalsize1">D</hi>ie de <choice><abbr>he<g ref="#apomod"/>en</abbr><expan>he<ex>er</ex>en</expan></choice> <choice><abbr>cone<g ref="#bar"/></abbr><expan>cone<ex>n</ex></expan></choice> dwaen</l>
+<lb n="9" xml:id="Af112rb.9"/><l n="A_M1_01_009"><choice><abbr><hi rend="capitalsize1">E</hi>n<g ref="#bar"/></abbr><expan><hi rend="capitalsize1">E</hi>n<ex>de</ex></expan></choice> <choice><abbr>plucke<g ref="#bar"/></abbr><expan>plucke<ex>n</ex></expan></choice> <choice><abbr>vande<g ref="#bar"/></abbr><expan>vande<ex>n</ex></expan></choice> stoue</l>
+<lb n="10" xml:id="Af112rb.10"/><l n="A_M1_01_010"><choice><abbr><hi rend="capitalsize1">E</hi>n<g ref="#bar"/></abbr><expan><hi rend="capitalsize1">E</hi>n<ex>de</ex></expan></choice> ic zie <choice><abbr>de<g ref="#bar"/></abbr><expan>de<ex>n</ex></expan></choice> <choice><abbr>rechte<g ref="#bar"/></abbr><expan>rechte<ex>n</ex></expan></choice> slaen</l>
+<lb n="11" xml:id="Af112rb.11"/><l n="A_M1_01_011"><hi rend="capitalsize1">B</hi>eede <choice><abbr>bespotte<g ref="#bar"/></abbr><expan>bespotte<ex>n</ex></expan></choice> <choice><abbr>en<g ref="#bar"/></abbr><expan>en<ex>de</ex></expan></choice> beuaen</l>
+<lb n="12" xml:id="Af112rb.12"/><l n="A_M1_01_012"><hi rend="capitalsize1">A</hi>lse die meese in de cloue</l>
+<lb n="13" xml:id="Af112rb.13"/><l n="A_M1_01_013"><hi rend="capitalsize1">R</hi>echts offene god <choice><abbr>v<g ref="#apomod"/>scroue</abbr><expan>v<ex>er</ex>scroue</expan></choice></l>
+</lg>
+</p>
+</body>
+</text>
+        </group>
+    </text>
+ </MVN>
