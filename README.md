@@ -12,7 +12,9 @@ This repository is a public template that allows you to recreate the basic funct
 4. Replace the contents of the `files` folder with your own collections. Each directory in `files` represents a collection. Each collection will include:
    -  an `xml` folder containing the XML files,
    -  an `img` folder containing the images (make sure the corresponding XML and image files have the same name before the extension),
-   -  *optionally*, a `meta.json` file minimally containing a value for the key `name`. In the absence of this file, the directory name will be used for the collection.
+   -  *optionally*, a `meta.json` file containing:
+      -  a string value for the key `name` (In the absence of this file/key, the directory name will be used for the collection.)
+      -  a boolean value for the key `picturesAvailable` (In the absence of this file/key, it will be assumed your collection does include images.)
 5. Commit and push your changes.
 
 If you follow these steps correctly and in the right order, you will kickstart the deployment workflow and your edition will shortly be deployed to `https://[your-username].github.io/[your-repo-name]`.
@@ -24,7 +26,9 @@ If you follow these steps correctly and in the right order, you will kickstart t
 4. Replace the contents of the `files` folder with your own collections. Each directory in `files` represents a collection. Each collection will include:
    -  an `xml` folder containing the XML files,
    -  an `img` folder containing the images (make sure the corresponding XML and image files have the same name before the extension),
-   -  *optionally*, a `meta.json` file minimally containing a value for the key `name`. In the absence of this file, the directory name will be used for the collection.
+   -  *optionally*, a `meta.json` file containing:
+      -  a string value for the key `name` (In the absence of this file/key, the directory name will be used for the collection.)
+      -  a boolean value for the key `picturesAvailable` (In the absence of this file/key, it will be assumed your collection does include images.)
 4. Run the Python script `script.py` from the root folder of the repository. This will update the `files_info.json` file which is necessary for the program to work.
 5. Start a local server (eg. [the VCS live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) or a [simple Python HTTP server](https://realpython.com/python-http-server/)) and open `index.html` on a browser. 
 
